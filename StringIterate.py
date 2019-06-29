@@ -53,6 +53,6 @@ print(b>= "K")  #true because 1) ascii valur and length
 print(b> "KHAN") #true because lower case asci valye greater
 print("KHAN"> b) #false
 
-
+#keypoint to remember 1) strings are stored on basis of ascii value 2) strings are immutable 
 
 
