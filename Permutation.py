@@ -7,10 +7,10 @@ def checkPermutation(str1,str2):
     lengthStr2 = len(str2)
 
     #1check if both lentghs are equal
-    if(lengthStr1 == lengthStr2):
-     return True;
+#     if(lengthStr1 == lengthStr2):
+#      return True;
 
-     #2 characters in both string much match
+     #2 characters in both string much match and lengths of both strings
     for counter in range(0, lengthStr1):
        if str1[counter] == str2[counter] and lengthStr1 == lengthStr2:
         return True
