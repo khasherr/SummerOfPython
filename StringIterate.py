@@ -59,4 +59,5 @@ print(a>= "abcdef") #will return true because 1) every characters are compared a
 
 #keypoint to remember 1) strings are stored on basis of ascii value 2) strings are immutable 
 
-
+a = "abce" < "abcdef"
+print(a)
