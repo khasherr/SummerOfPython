@@ -26,8 +26,13 @@ def firstIndex(arr, x):
         return -1
     if  arr[0] == x:
         return 0;
-    return firstIndex(arr[1:],x)
+    smallerList = arr[1:]
+    smallListCal = firstIndex(smallerList,x)
 
+    if smallListCal == -1:
+        return -1
+    else:
+        return smallListCal +1
 # Main - this code was given
 from sys import setrecursionlimit
 setrecursionlimit(11000)
@@ -39,3 +44,12 @@ arr=list(int(i) for i in input().strip().split(' '))
 x=int(input())
 print(firstIndex(arr, x))
 
+
+#How it works:
+#step 1: checks if len(list) == 0 if so returns -1 by len(list) == 0 its mean list is empty. So obvious list is empty .
+#if not then proceeds to step 2:
+#step 2: checks if list[index] == the number we want to find if so returns 0 means that yes we want found the number if not then
+#proceed to step 3
+#step 3: store the list from index 1 -- n into some variable (1 --n because we did not find the number at index[0]
+#so in that smaller list repeat step1 -2 . If found return it and add to each returning call
+#if not found then it will poinbt to empty list and return -1 after each returning call
