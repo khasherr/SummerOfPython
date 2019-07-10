@@ -1,5 +1,5 @@
 #Sher
-#This program finds the first
+#This program finds the first occurence of a numver in list
 
 # Test 0 - false 1 - true
 # def FirstIndex (arr, number):
